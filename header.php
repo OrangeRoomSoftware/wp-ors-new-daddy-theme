@@ -25,3 +25,17 @@
     <![endif]-->
   </head>
   <body <?php body_class(); ?>>
+    <header>
+      <h1>Site Title</h1>
+
+      <!-- Start WordPress Menu -->
+      <?php wp_nav_menu( array(
+        'container' => 'nav',
+        'container_class' => 'navbar navbar-default',
+        'theme_location' => 'top',
+        'menu_class' => 'nav navbar-nav',
+        'walker' => new Bootstrap_Walker(),
+        ) );
+      ?>
+      <!-- End WordPress Menu -->
+    </header>
