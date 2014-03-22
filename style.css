@@ -9,3 +9,68 @@ Tags: ORS, Theme, New-Daddy
 License: BSD
 License URI: http://en.wikipedia.org/wiki/BSD_licenses
 */
+
+body {
+  padding: 0 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* Sidebar */
+aside {
+  float: left;
+  margin-right: 20px;
+}
+
+aside.sidebar {
+  display: inline-block;
+  width: 300px;
+  padding: 20px 10px;
+  background-color: #F8F8F8;
+  border: solid 1px #E7E7E7;
+  border-radius: 5px;
+}
+
+aside.sidebar nav ul,
+aside.sidebar nav li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+aside.sidebar nav ul li ul {
+  margin-left: 20px;
+}
+
+/* Footer */
+footer {
+  clear: both;
+  padding-top: 20px;
+}
+
+footer nav {
+  background-color: #F8F8F8;
+  border: solid 1px #E7E7E7;
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+
+footer nav ul,
+footer nav li {
+  list-style: none;
+  display: inline;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav ul li:after {
+  content: ' |';
+}
+
+footer nav ul li:last-child:after {
+  content: '';
+}

@@ -29,13 +29,16 @@
       <h1>Site Title</h1>
 
       <!-- Start WordPress Menu -->
-      <?php wp_nav_menu( array(
-        'container' => 'nav',
-        'container_class' => 'navbar navbar-default',
-        'theme_location' => 'top',
-        'menu_class' => 'nav navbar-nav',
-        'walker' => new Bootstrap_Walker(),
-        ) );
+      <?php
+      if ( has_nav_menu('top') ) {
+        wp_nav_menu( array(
+          'container' => 'nav',
+          'container_class' => 'navbar navbar-default',
+          'theme_location' => 'top',
+          'menu_class' => 'nav navbar-nav',
+          'walker' => new Bootstrap_Walker(),
+          ) );
+      }
       ?>
       <!-- End WordPress Menu -->
     </header>

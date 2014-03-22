@@ -55,4 +55,14 @@ if ( function_exists( 'register_nav_menu' ) ) {
   register_nav_menu( 'sidebar', 'Sidebar Navigation Menu' );
 }
 
+# Sidebar
+if ( function_exists('register_sidebar') ) {
+  register_sidebar(array(
+    'before_widget' => '<section>',
+    'after_widget' => '</section>',
+    'before_title' => '<h2 class="widgettitle">',
+    'after_title' => '</h2>',
+  ));
+}
+
 ?>
