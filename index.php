@@ -8,7 +8,7 @@
     <?php
     $has_sidebar = false;
     $col_width = 'col-lg-12';
-    if ( has_nav_menu('sidebar') or is_active_sidebar( 'sidebar-1' ) ) {
+    if ( has_nav_menu('sidebar') or is_active_sidebar( 'sidebar' ) ) {
       $has_sidebar = true;
       $col_width = 'col-lg-9';
     }
@@ -19,8 +19,7 @@
     if ( has_nav_menu('sidebar') )
       wp_nav_menu( array( 'theme_location' => 'sidebar', 'container' => 'nav') );
 
-    if ( is_active_sidebar('sidebar-1') )
-      dynamic_sidebar("sidebar-1");
+    dynamic_sidebar("sidebar");
 
     if ( $has_sidebar )
       echo '</ul>';
@@ -28,6 +27,7 @@
     <!-- End Sidebar -->
 
     <div class="<?php echo $col_width ?>">
+      <?php dynamic_sidebar("above-content"); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -60,7 +60,7 @@
         </nav>
         <?php } ?>
       </div>
-    <?php else : ?>
+      <?php else : ?>
       <article id="404-not-found">
         <header>
           <h2>Not Found</h2>
@@ -70,7 +70,8 @@
           <?php get_search_form(); ?>
         </section>
       </article>
-    <?php endif; ?>
+      <?php endif; ?>
+      <?php dynamic_sidebar("below-content"); ?>
     </div>
   </div>
 <!-- End Site Body -->

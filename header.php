@@ -28,9 +28,11 @@
     <div class="container">
       <div class="row">
         <header class="col-lg-12">
+          <?php dynamic_sidebar("above-header"); ?>
           <hgroup>
             <h1><a href="<?php echo get_option("home")?>/"><?php bloginfo("name")?></a></h1>
           </hgroup>
+          <?php dynamic_sidebar("below-header"); ?>
           <!-- Start WordPress Menu -->
           <?php
           if ( has_nav_menu('top') ) {
