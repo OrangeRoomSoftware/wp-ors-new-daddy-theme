@@ -24,7 +24,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body <?php body_class(""); ?>>
+  <body <?php body_class(); ?>>
     <header class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -33,19 +33,19 @@
             <h1><a href="<?php echo get_option("home")?>/"><?php bloginfo("name")?></a></h1>
           </hgroup>
           <?php dynamic_sidebar("below-header"); ?>
-          <!-- Start WordPress Menu -->
-          <?php
-          if ( has_nav_menu('top') ) {
-            wp_nav_menu( array(
-              'container' => 'nav',
-              'container_class' => 'navbar',
-              'theme_location' => 'top',
-              'menu_class' => 'nav navbar-nav',
-              'walker' => new Bootstrap_Walker(),
-              ) );
-          }
-          ?>
-          <!-- End WordPress Menu -->
         </div>
       </div>
+    <!-- Start WordPress Menu -->
+    <?php
+    if ( has_nav_menu('top') ) {
+      wp_nav_menu( array(
+        'container' => 'nav',
+        'container_class' => 'navbar',
+        'theme_location' => 'top',
+        'menu_class' => 'nav navbar-nav',
+        'walker' => new Bootstrap_Walker(),
+        ) );
+    }
+    ?>
+    <!-- End WordPress Menu -->
     </header>
