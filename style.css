@@ -18,15 +18,12 @@ header h1 {
 }
 
 .sidebar nav {
-  background-color: #F8F8F8;
-  border: solid 1px #E7E7E7;
-  border-radius: 5px;
   padding: 10px 0;
 }
 
 .sidebar nav ul,
 .sidebar nav li {
-  margin: 0 0 0 10px;
+  margin: 0;
   padding: 0;
   list-style-position: inside;
 }
@@ -50,11 +47,7 @@ footer {
 }
 
 footer nav {
-  background-color: #F8F8F8;
-  border: solid 1px #E7E7E7;
-  border-radius: 5px;
   padding: 10px 0;
-  margin-top: 20px;
 }
 
 footer nav ul,

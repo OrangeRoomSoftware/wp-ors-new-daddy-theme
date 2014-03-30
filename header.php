@@ -36,7 +36,7 @@
           if ( has_nav_menu('top') ) {
             wp_nav_menu( array(
               'container' => 'nav',
-              'container_class' => 'navbar navbar-default',
+              'container_class' => 'navbar',
               'theme_location' => 'top',
               'menu_class' => 'nav navbar-nav',
               'walker' => new Bootstrap_Walker(),
