@@ -25,20 +25,25 @@
     <![endif]-->
   </head>
   <body <?php body_class(); ?>>
-    <header>
-      <h1><a href="<?php echo get_option("home")?>/"><?php bloginfo("name")?></a></h1>
-
-      <!-- Start WordPress Menu -->
-      <?php
-      if ( has_nav_menu('top') ) {
-        wp_nav_menu( array(
-          'container' => 'nav',
-          'container_class' => 'navbar navbar-default',
-          'theme_location' => 'top',
-          'menu_class' => 'nav navbar-nav',
-          'walker' => new Bootstrap_Walker(),
-          ) );
-      }
-      ?>
-      <!-- End WordPress Menu -->
-    </header>
+    <div class="container">
+      <div class="row">
+        <header class="col-lg-12">
+          <hgroup>
+            <h1><a href="<?php echo get_option("home")?>/"><?php bloginfo("name")?></a></h1>
+          </hgroup>
+          <!-- Start WordPress Menu -->
+          <?php
+          if ( has_nav_menu('top') ) {
+            wp_nav_menu( array(
+              'container' => 'nav',
+              'container_class' => 'navbar navbar-default',
+              'theme_location' => 'top',
+              'menu_class' => 'nav navbar-nav',
+              'walker' => new Bootstrap_Walker(),
+              ) );
+          }
+          ?>
+          <!-- End WordPress Menu -->
+        </header>
+      </div>
+    </div>
