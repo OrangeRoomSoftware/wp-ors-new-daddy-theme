@@ -14,11 +14,8 @@ header h1 {
   text-align: center;
 }
 
-.sidebar {
-}
-
-.sidebar nav {
-  padding: 10px 0;
+header .navbar {
+  margin: 0;
 }
 
 .sidebar nav ul,
@@ -42,14 +39,6 @@ header h1 {
 }
 
 /* Footer */
-footer {
-  clear: both;
-}
-
-footer nav {
-  padding: 10px 0;
-}
-
 footer nav ul,
 footer nav li {
   list-style: none;
