@@ -25,7 +25,7 @@
     <![endif]-->
   </head>
   <body <?php body_class(); ?>>
-    <header class="container">
+    <header class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <?php dynamic_sidebar("above-header"); ?>
@@ -39,7 +39,7 @@
     <?php
     if ( has_nav_menu('top') ) {
       wp_nav_menu( array(
-        'container' => 'nav',
+        'container-fluid' => 'nav',
         'container_class' => 'navbar',
         'theme_location' => 'top',
         'menu_class' => 'nav navbar-nav',

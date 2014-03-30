@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Start Site Body -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
 
     <!-- Start Sidebar -->
@@ -10,14 +10,14 @@
     $col_width = 'col-lg-12';
     if ( has_nav_menu('sidebar') or is_active_sidebar( 'sidebar' ) ) {
       $has_sidebar = true;
-      $col_width = 'col-lg-9';
+      $col_width = 'col-sm-9';
     }
 
     if ( $has_sidebar )
-      echo '<ul class="sidebar col-lg-3">';
+      echo '<ul class="sidebar col-sm-3">';
 
     if ( has_nav_menu('sidebar') )
-      wp_nav_menu( array( 'theme_location' => 'sidebar', 'container' => 'nav') );
+      wp_nav_menu( array( 'theme_location' => 'sidebar', 'container-fluid' => 'nav') );
 
     dynamic_sidebar("sidebar");
 
