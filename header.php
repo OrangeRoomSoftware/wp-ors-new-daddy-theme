@@ -24,10 +24,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body <?php body_class(); ?>>
-    <div class="container">
+  <body <?php body_class(""); ?>>
+    <header class="container">
       <div class="row">
-        <header class="col-lg-12">
+        <div class="col-lg-12">
           <?php dynamic_sidebar("above-header"); ?>
           <hgroup>
             <h1><a href="<?php echo get_option("home")?>/"><?php bloginfo("name")?></a></h1>
@@ -46,6 +46,6 @@
           }
           ?>
           <!-- End WordPress Menu -->
-        </header>
+        </div>
       </div>
-    </div>
+    </header>
