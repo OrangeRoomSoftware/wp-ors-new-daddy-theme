@@ -15,7 +15,7 @@ header h1 {
 }
 
 header .navbar {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .sidebar nav ul,
