@@ -35,6 +35,15 @@ header h1 {
   margin-left: 20px;
 }
 
+.sidebar ul, .sidebar li {
+  list-style: none;
+}
+
+.sidebar li .widgettitle {
+  font-size: 150%;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   clear: both;

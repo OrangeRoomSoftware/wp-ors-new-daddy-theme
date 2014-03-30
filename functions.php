@@ -57,12 +57,7 @@ if ( function_exists( 'register_nav_menu' ) ) {
 
 # Sidebar
 if ( function_exists('register_sidebar') ) {
-  register_sidebar(array(
-    'before_widget' => '<section>',
-    'after_widget' => '</section>',
-    'before_title' => '<h2 class="widgettitle">',
-    'after_title' => '</h2>',
-  ));
+  register_sidebar();
 }
 
 ?>
