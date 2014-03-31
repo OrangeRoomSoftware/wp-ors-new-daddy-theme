@@ -10,6 +10,7 @@ License: BSD
 License URI: http://en.wikipedia.org/wiki/BSD_licenses
 */
 
+/****** Header *******/
 header h1 {
   text-align: center;
 }
@@ -18,6 +19,7 @@ header .navbar {
   margin-bottom: 0;
 }
 
+/****** Sidebar *******/
 .sidebar nav ul,
 .sidebar nav li {
   margin: 0;
@@ -38,15 +40,18 @@ header .navbar {
   font-weight: bold;
 }
 
-/* Footer */
+/****** Footer *******/
+footer nav {
+  text-align: center;
+}
+
 footer nav ul,
 footer nav li {
   list-style: none;
-  display: inline;
 }
 
-footer nav {
-  text-align: center;
+footer nav ul li {
+  display: inline;
 }
 
 footer nav ul li:after {
@@ -55,4 +60,8 @@ footer nav ul li:after {
 
 footer nav ul li:last-child:after {
   content: '';
+}
+
+footer nav ul li a {
+  padding: 0 15px;
 }

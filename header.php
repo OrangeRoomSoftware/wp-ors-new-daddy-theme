@@ -39,7 +39,7 @@
     <?php
     if ( has_nav_menu('top') ) {
       wp_nav_menu( array(
-        'container-fluid' => 'nav',
+        'container' => 'nav',
         'container_class' => 'navbar',
         'theme_location' => 'top',
         'menu_class' => 'nav navbar-nav',

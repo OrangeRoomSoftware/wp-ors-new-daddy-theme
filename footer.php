@@ -4,7 +4,14 @@
           <?php dynamic_sidebar("above-footer"); ?>
           <?php
             if ( has_nav_menu('bottom') ) {
-              wp_nav_menu(array('theme_location' => 'bottom', 'container-fluid' => 'nav', 'depth' => 1));
+              wp_nav_menu( array(
+                'container' => 'nav',
+                'container_class' => '',
+                'theme_location' => 'bottom',
+                'menu_class' => '',
+                'depth' => 1
+                )
+              );
             }
           ?>
           <?php dynamic_sidebar("below-footer"); ?>
