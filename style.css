@@ -22,6 +22,8 @@ header h1 a {
 
 header .navbar {
   margin-bottom: 0;
+  margin: 0 -15px;
+  border-radius: 0;
 }
 
 /****** Sidebar *******/
