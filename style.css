@@ -15,6 +15,11 @@ header h1 {
   text-align: center;
 }
 
+header h1 a {
+  color: black;
+  text-decoration: none;
+}
+
 header .navbar {
   margin-bottom: 0;
 }
