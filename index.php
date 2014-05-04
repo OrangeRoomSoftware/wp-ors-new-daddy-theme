@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Start Site Body -->
-<div class="content container-fluid">
+<div id="site-content" class="content container-fluid">
   <div class="row">
 
     <!-- Start Sidebar -->
