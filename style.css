@@ -65,3 +65,8 @@ footer nav ul li:last-child:after {
 footer nav ul li a {
   padding: 0 15px;
 }
+
+/****** Coming Soon *******/
+#coming-soon {
+  text-align: center;
+}
