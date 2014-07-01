@@ -1,4 +1,4 @@
-    <footer class="container-fluid">
+    <footer id="site-footer" class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <?php dynamic_sidebar("above-footer"); ?>

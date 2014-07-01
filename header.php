@@ -25,7 +25,7 @@
     <![endif]-->
   </head>
   <body <?php body_class(); ?>>
-    <header class="container-fluid">
+    <header id="site-header" class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <?php dynamic_sidebar("above-header"); ?>

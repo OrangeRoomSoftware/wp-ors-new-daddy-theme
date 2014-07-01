@@ -28,13 +28,9 @@
 
     <div class="<?php echo $col_width ?>">
       <?php dynamic_sidebar("above-content"); ?>
-      <?php if (have_posts()) : ?>
+      <?php if (woocommerce_content()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-            <header>
-              <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-              <time datetime="<?php the_time('Y-m-d')?>"><?php the_time('F jS, Y') ?></time>
-            </header>
             <section>
               <?php if ( has_post_thumbnail( $post->ID ) ) { ?>
                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
@@ -49,27 +45,7 @@
             </section>
           </article>
         <?php endwhile; ?>
-
-        <?php
-        if ( function_exists( 'wp_paginate' ) ) {
-          wp_paginate();
-        } else { ?>
-        <nav>
-          <div id="older"><?php next_posts_link('&#9664; Older Entries') ?></div>
-          <div id="newer"><?php previous_posts_link('Newer Entries &#9654;') ?></div>
-        </nav>
-        <?php } ?>
       </div>
-      <?php else : ?>
-      <article id="404-not-found">
-        <header>
-          <h2>Not Found</h2>
-        </header>
-        <section>
-          <p>Sorry, but you are looking for something that isn't here.</p>
-          <?php get_search_form(); ?>
-        </section>
-      </article>
       <?php endif; ?>
       <?php dynamic_sidebar("below-content"); ?>
     </div>
