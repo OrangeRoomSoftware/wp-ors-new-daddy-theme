@@ -35,13 +35,7 @@
               <?php if ( has_post_thumbnail( $post->ID ) ) { ?>
                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
               <?php } ?>
-              <?php
-              if ( $ors_theme_options['use_excerpts'] == 0 ) {
-                the_content();
-              } else {
-                the_excerpt();
-              }
-              ?>
+              <?php the_content(); ?>
             </section>
           </article>
         <?php endwhile; ?>
