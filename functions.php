@@ -49,14 +49,14 @@ if (!function_exists('ors_javascripts')) {
   }
 }
 
-# This theme uses wp_nav_menu().
+// This theme uses wp_nav_menu().
 if ( function_exists( 'register_nav_menu' ) ) {
   register_nav_menu( 'top', 'Top Navigation Menu' );
   register_nav_menu( 'bottom', 'Bottom Navigation Menu' );
   register_nav_menu( 'sidebar', 'Sidebar Navigation Menu' );
 }
 
-# Sidebar
+// Sidebar
 if ( function_exists('register_sidebar') ) {
   // Register widget zones for Home Page template
   register_sidebar( array('name' => 'Above Header',  'id' => 'above-header',  'before_widget' => '', 'after_widget' => '') );
@@ -68,4 +68,10 @@ if ( function_exists('register_sidebar') ) {
   register_sidebar( array('name' => 'Below Footer',  'id' => 'below-footer',  'before_widget' => '', 'after_widget' => '') );
 }
 
-?>
+// Get an attachment url by name
+function get_attachment_url_by_name($name) {
+	global $wpdb;
+	$query = "SELECT guid FROM {$wpdb->posts} WHERE post_title like '%${name}%'";
+	$url = $wpdb->get_var($query);
+	return $url;
+}
