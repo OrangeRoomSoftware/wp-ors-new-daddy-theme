@@ -15,9 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title('-', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
-<!-- Start WordPress Head Stuff -->
-<?php wp_head(); ?>
-<!-- End WordPress Head Stuff -->
+    <!-- Start WordPress Head Stuff -->
+    <?php wp_head(); ?>
+    <!-- End WordPress Head Stuff -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -49,3 +49,33 @@
     ?>
     <!-- End WordPress Menu -->
     </header>
+
+    <!-- Start Site Content -->
+
+    <div id="site-content" class="content container-fluid">
+      <div class="row">
+
+        <!-- Start Sidebar -->
+        <?php
+        $has_sidebar = false;
+        $col_width = 'col-lg-12';
+        if ( has_nav_menu('sidebar') or is_active_sidebar( 'sidebar' ) ) {
+          $has_sidebar = true;
+          $col_width = 'col-sm-9';
+        }
+
+        if ( $has_sidebar )
+          echo '<ul class="sidebar col-sm-3">';
+
+        if ( has_nav_menu('sidebar') )
+          wp_nav_menu( array( 'theme_location' => 'sidebar', 'container-fluid' => 'nav') );
+
+        dynamic_sidebar("sidebar");
+
+        if ( $has_sidebar )
+          echo '</ul>';
+        ?>
+        <!-- End Sidebar -->
+
+        <div class="<?php echo $col_width ?>">
+          <?php dynamic_sidebar("above-content"); ?>

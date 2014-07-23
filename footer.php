@@ -1,3 +1,9 @@
+          <?php dynamic_sidebar("below-content"); ?>
+        </div>
+      </div>
+    </div>
+    <!-- End Site Body -->
+
     <footer id="site-footer" class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
