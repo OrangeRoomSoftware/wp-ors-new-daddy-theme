@@ -16,7 +16,6 @@ define('ORS_THEME_NAME', basename(ORS_CHILD_TEMPLATE_DIR));
  */
 if ( !function_exists('ors_stylesheets') ) {
   function ors_stylesheets() {
-    wp_enqueue_style('bootstrap', ORS_PARENT_TEMPLATE_URL . "/css/bootstrap.min.css", 'bootstrap', null, 'all');
     wp_enqueue_style('ors-' . ORS_THEME_NAME, get_bloginfo('stylesheet_url'), 'ors-parent-style', null, 'all');
   }
 
@@ -32,9 +31,6 @@ if ( !function_exists('ors_stylesheets') ) {
  */
 if (!function_exists('ors_javascripts')) {
   function ors_javascripts() {
-    // Install Twitter Bootstap JS
-    wp_enqueue_script('twitter-bootstrap', ORS_PARENT_TEMPLATE_URL . "/js/bootstrap.min.js", array('jquery'), null, true);
-
     // Install parent theme script.js
     wp_enqueue_script('ors-parent-custom', ORS_PARENT_TEMPLATE_URL . "/script.js", array('jquery', 'twitter-bootstrap'), null, true);
 
