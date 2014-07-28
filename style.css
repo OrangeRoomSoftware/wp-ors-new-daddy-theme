@@ -9,9 +9,9 @@ License:BSD
 License URI:http://en.wikipedia.org/wiki/BSD_licenses */
 
 /* ***** Header ***** */
-header h1 { text-align: center; }
-header h1 a { color: black; text-decoration: none; }
-header .navbar { margin-bottom: 0; margin: 0 -16px; border-radius: 0; }
+#site-header h1 { text-align: center; }
+#site-header h1 a { color: black; text-decoration: none; }
+#site-header .navbar { margin-bottom: 0; margin: 0 -16px; border-radius: 0; }
 
 /* ***** Sidebar ***** */
 .sidebar nav ul, .sidebar nav li { margin: 0; padding: 0; list-style-position: inside; }
@@ -19,13 +19,16 @@ header .navbar { margin-bottom: 0; margin: 0 -16px; border-radius: 0; }
 .sidebar ul, .sidebar li { list-style: none; }
 .sidebar li .widgettitle { font-size: 150%; font-weight: bold; }
 
+/* ***** Content ***** */
+#site-content nav { margin: 25px 0; text-align: center;}
+
 /* ***** Footer ***** */
-footer nav { text-align: center; }
-footer nav ul, footer nav li { list-style: none; }
-footer nav ul li { display: inline; }
-footer nav ul li:after { content: ' |'; }
-footer nav ul li:last-child:after { content: ''; }
-footer nav ul li a { padding: 0 15px; }
+#site-footer nav { text-align: center; }
+#site-footer nav ul, footer nav li { list-style: none; }
+#site-footer nav ul li { display: inline; }
+#site-footer nav ul li:after { content: ' |'; }
+#site-footer nav ul li:last-child:after { content: ''; }
+#site-footer nav ul li a { padding: 0 15px; }
 
 /* ***** Coming Soon ***** */
 #coming-soon { text-align: center; }

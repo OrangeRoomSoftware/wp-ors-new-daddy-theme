@@ -6,7 +6,7 @@
 
     <footer id="site-footer" class="container-fluid">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <?php dynamic_sidebar("above-footer"); ?>
           <?php
             if ( has_nav_menu('bottom') ) {
@@ -26,6 +26,5 @@
     </footer>
 
     <?php wp_footer(); ?>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>

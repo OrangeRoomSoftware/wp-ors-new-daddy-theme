@@ -8,21 +8,24 @@
         <time datetime="<?php the_time('Y-m-d')?>"><?php the_time('F jS, Y') ?></time>
       </header>
       <section>
-        <?php if ( has_post_thumbnail( $post->ID ) ) { ?>
+        <?php if ( has_post_thumbnail() ) { ?>
           <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
         <?php } ?>
         <?php the_content(); ?>
       </section>
     </article>
-  <?php endwhile;
-
-  if ( function_exists( 'wp_paginate' ) ) {
+  <?php endwhile; ?>
+  <?php if ( function_exists( 'wp_paginate' ) ) {
     wp_paginate();
   } else { ?>
-  <nav>
-    <div id="older"><?php next_posts_link('&#9664; Older Entries') ?></div>
-    <div id="newer"><?php previous_posts_link('Newer Entries &#9654;') ?></div>
-  </nav>
+    <nav class="navigation">
+      <span class="nav-previous">
+        <?php next_posts_link(__('&larr; Previous')); ?>
+      </span>
+      <span class="nav-next">
+        <?php previous_posts_link(__('Next &rarr;')); ?>
+      </span>
+    </nav>
   <?php } ?>
 <?php else : ?>
   <article id="404-not-found">
