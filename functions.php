@@ -1,4 +1,7 @@
 <?php
+
+# WP ORS New Daddy Theme - functions.php
+
 include("bootstrap-menu.php");
 
 define('ORS_PARENT_TEMPLATE_URL', get_bloginfo('template_url'));

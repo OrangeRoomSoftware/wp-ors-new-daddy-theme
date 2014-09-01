@@ -1,3 +1,5 @@
+<!-- WP ORS New Daddy Theme - woocommerce.php -->
+
 <?php get_header(); ?>
 
 <?php if (woocommerce_content()) : ?>

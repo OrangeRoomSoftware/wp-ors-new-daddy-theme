@@ -8,6 +8,9 @@
  * @subpackage New Daddy - ORS
  */
 ?><!DOCTYPE html>
+
+<!-- WP ORS New Daddy Theme - header.php -->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">

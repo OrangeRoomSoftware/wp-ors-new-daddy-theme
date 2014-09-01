@@ -3,6 +3,9 @@
   Template Name: Coming Soon
  */
 ?><!DOCTYPE html>
+
+<!-- WP ORS New Daddy Theme - coming-soon.php -->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
