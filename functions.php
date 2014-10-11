@@ -4,6 +4,7 @@
 
 include("bootstrap-menu.php");
 
+// Aliases
 define('ORS_PARENT_TEMPLATE_URL', get_bloginfo('template_url'));
 define('ORS_PARENT_TEMPLATE_DIR', dirname(__FILE__));
 define('ORS_CHILD_TEMPLATE_URL',  get_stylesheet_directory_uri());
@@ -11,6 +12,10 @@ define('ORS_CHILD_TEMPLATE_DIR',  get_stylesheet_directory());
 define('ORS_UPLOAD_DIR',          $uploads['path']);
 define('ORS_UPLOAD_URL',          $uploads['url']);
 define('ORS_THEME_NAME', basename(ORS_CHILD_TEMPLATE_DIR));
+
+// Theme support
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'woocommerce' );
 
 /**
  * Stylesheets
