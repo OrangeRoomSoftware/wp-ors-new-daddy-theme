@@ -2,7 +2,7 @@
 
 # WP ORS New Daddy Theme - functions.php
 
-include("bootstrap-menu.php");
+require_once('wp_bootstrap_navwalker.php');
 
 // Aliases
 define('ORS_PARENT_TEMPLATE_URL', get_bloginfo('template_url'));

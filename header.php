@@ -56,7 +56,7 @@
         'container_class' => 'navbar',
         'theme_location' => 'top',
         'menu_class' => 'nav navbar-nav',
-        'walker' => new Bootstrap_Walker(),
+        'walker' => new wp_bootstrap_navwalker(),
         ) );
     }
     ?>
