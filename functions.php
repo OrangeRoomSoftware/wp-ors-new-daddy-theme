@@ -40,7 +40,7 @@ if ( !function_exists('ors_stylesheets') ) {
 if (!function_exists('ors_javascripts')) {
   function ors_javascripts() {
     // Install parent theme script.js
-    wp_enqueue_script('ors-parent-custom', ORS_PARENT_TEMPLATE_URL . "/script.js", array('jquery', 'twitter-bootstrap'), null, true);
+    wp_enqueue_script('ors-parent-custom', ORS_PARENT_TEMPLATE_URL . "/script.js", array('jquery'), null, true);
 
     // Install child theme script.js
     if (file_exists(CHILD_TEMPLATE_DIR . "/script.js") == true) {
