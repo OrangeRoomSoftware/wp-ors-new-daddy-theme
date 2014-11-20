@@ -63,13 +63,13 @@ if ( function_exists( 'register_nav_menu' ) ) {
 // Sidebar
 if ( function_exists('register_sidebar') ) {
   // Register widget zones for Home Page template
-  register_sidebar( array('name' => 'Above Header',  'id' => 'above-header',  'before_widget' => '', 'after_widget' => '') );
-  register_sidebar( array('name' => 'Below Header',  'id' => 'below-header',  'before_widget' => '', 'after_widget' => '') );
-  register_sidebar( array('name' => 'Sidebar',       'id' => 'sidebar',       'before_widget' => '', 'after_widget' => '') );
-  register_sidebar( array('name' => 'Above Content', 'id' => 'above-content', 'before_widget' => '', 'after_widget' => '') );
-  register_sidebar( array('name' => 'Below Content', 'id' => 'below-content', 'before_widget' => '', 'after_widget' => '') );
-  register_sidebar( array('name' => 'Above Footer',  'id' => 'above-footer',  'before_widget' => '', 'after_widget' => '') );
-  register_sidebar( array('name' => 'Below Footer',  'id' => 'below-footer',  'before_widget' => '', 'after_widget' => '') );
+  register_sidebar( array('name' => 'Above Header',  'id' => 'above-header',  'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
+  register_sidebar( array('name' => 'Below Header',  'id' => 'below-header',  'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
+  register_sidebar( array('name' => 'Sidebar',       'id' => 'sidebar',       'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
+  register_sidebar( array('name' => 'Above Content', 'id' => 'above-content', 'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
+  register_sidebar( array('name' => 'Below Content', 'id' => 'below-content', 'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
+  register_sidebar( array('name' => 'Above Footer',  'id' => 'above-footer',  'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
+  register_sidebar( array('name' => 'Below Footer',  'id' => 'below-footer',  'before_widget' => '<div class="widget">', 'after_widget' => '</div>') );
 }
 
 // Get an attachment url by name
