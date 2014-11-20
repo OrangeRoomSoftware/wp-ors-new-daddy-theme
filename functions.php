@@ -43,7 +43,7 @@ if (!function_exists('ors_javascripts')) {
     wp_enqueue_script('ors-parent-custom', ORS_PARENT_TEMPLATE_URL . "/script.js", array('jquery'), null, true);
 
     // Install child theme script.js
-    if (file_exists(CHILD_TEMPLATE_DIR . "/script.js") == true) {
+    if (file_exists(ORS_CHILD_TEMPLATE_DIR . "/script.js") == true) {
       wp_enqueue_script('ors-child-custom', CHILD_TEMPLATE_URL . "/script.js", array('jquery', 'twitter-bootstrap'), null, true);
     }
   }
