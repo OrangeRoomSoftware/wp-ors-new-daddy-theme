@@ -1,6 +1,7 @@
 <!-- WP ORS New Daddy Theme - footer.php -->
-
-          <?php dynamic_sidebar("below-content"); ?>
+          <div id="below-content">
+            <?php dynamic_sidebar("below-content"); ?>
+          </div>
         </div>
       </div>
     </div>
