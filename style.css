@@ -11,14 +11,14 @@ License URI: http://en.wikipedia.org/wiki/BSD_licenses
 */
 
 /* ***** Header ***** */
-#site-header h1 { text-align: center; }
-#site-header h1 a { color: black; text-decoration: none; }
-#site-header .navbar { margin-bottom: 0; margin: 0 -16px; border-radius: 0; }
+#site-header hgroup, #site-header hgroup h1 { overflow: hidden; }
+#site-header .navbar { border-radius: 0; margin: 0 -16px; }
+#site-header #site-top-nav { margin: 0 -16px; border-radius: 0; }
 
 /* ***** Sidebar ***** */
 .sidebar nav ul, .sidebar nav li { margin: 0; padding: 0; list-style-position: inside; }
 .sidebar nav ul li ul { margin-left: 20px; }
-.sidebar ul, .sidebar li { list-style: none; }
+.sidebar > ul, .sidebar > li { list-style: none; }
 .sidebar li .widgettitle { font-size: 150%; font-weight: bold; }
 
 /* ***** Content ***** */
@@ -34,6 +34,11 @@ License URI: http://en.wikipedia.org/wiki/BSD_licenses
 
 /* ***** Coming Soon ***** */
 #coming-soon { text-align: center; }
+
+/* Mobile Size */
+@media screen and (max-width: 768px) {
+  #site-top-nav > ul > li > a { text-align: left; }
+}
 
 /* ***** WordPress Core ***** */
 .alignnone { margin: 5px 20px 20px 0; }
