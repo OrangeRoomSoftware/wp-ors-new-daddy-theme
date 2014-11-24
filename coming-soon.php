@@ -15,7 +15,7 @@
     <!-- Start WordPress Head Stuff -->
     <?php wp_head(); ?>
     <!-- End WordPress Head Stuff -->
-  <body>
+  <body id="coming-soon">
     <header class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
