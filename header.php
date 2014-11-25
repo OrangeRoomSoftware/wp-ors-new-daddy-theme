@@ -29,7 +29,6 @@ href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- end Font Awesome -->
 
     <!-- Start WordPress Head Stuff -->
-    <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
     <!-- End WordPress Head Stuff -->
 
