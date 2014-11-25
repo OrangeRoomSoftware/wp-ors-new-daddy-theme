@@ -14,6 +14,7 @@ License URI: http://en.wikipedia.org/wiki/BSD_licenses
 #site-header hgroup, #site-header hgroup h1 { overflow: hidden; }
 #site-header .navbar { border-radius: 0; margin: 0 -16px; }
 #site-header #site-top-nav { margin: 0 -16px; border-radius: 0; }
+#site-header #site-top-nav ul.nav li.dropdown:hover > ul.dropdown-menu { display: block; }
 
 /* ***** Sidebar ***** */
 .sidebar nav ul, .sidebar nav li { margin: 0; padding: 0; list-style-position: inside; }
