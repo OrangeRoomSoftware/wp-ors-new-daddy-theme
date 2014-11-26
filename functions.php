@@ -44,7 +44,7 @@ if (!function_exists('ors_javascripts')) {
 
     // Install child theme script.js
     if (file_exists(ORS_CHILD_TEMPLATE_DIR . "/script.js") == true) {
-      wp_enqueue_script('ors-child-custom', CHILD_TEMPLATE_URL . "/script.js", array('jquery', 'twitter-bootstrap'), null, true);
+      wp_enqueue_script('ors-child-custom', ORS_CHILD_TEMPLATE_URL . "/script.js", array('jquery', 'twitter-bootstrap'), null, true);
     }
   }
 
