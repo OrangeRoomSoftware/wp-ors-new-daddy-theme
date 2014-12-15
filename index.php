@@ -1,5 +1,3 @@
-<!-- WP ORS New Daddy Theme - index.php -->
-
 <?php get_header(); ?>
 
 <?php if (have_posts()) : ?>
